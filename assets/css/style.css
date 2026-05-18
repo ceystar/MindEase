@@ -633,6 +633,24 @@ nav a:active {
     margin-bottom: 20px;
 }
 
+.hero-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #4f8a5b;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover{
+    background: #6CAE75;
+    color: white;
+}
+
 /* DESCRIPTION */
 .description {
 
@@ -843,7 +861,7 @@ nav a:active {
 
     font-family: 'Poppins', sans-serif;
 
-    background-image: url('backgroundsession.webp');
+     background-image: url('../images/backgroundsession.webp');
 
     background-size: cover;
 
@@ -1006,7 +1024,7 @@ nav a:active {
     padding: 60px 20px;
     font-family: 'Poppins', sans-serif;
     position: relative;
-    background-image: url('backgroundsession.webp');
+    background-image: url('../images/backgroundsession.webp');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -1144,7 +1162,7 @@ nav a:active {
 
     height: 550px;
 
-    background-image: url('background1.png');
+     background-image: url('../images/background1.png');
 
     background-size: cover;
 
@@ -1431,7 +1449,7 @@ nav a:active {
 
     font-family: 'Poppins', sans-serif;
 
-    background-image: url('backgroundsession.webp');
+     background-image: url('../images/backgroundsession.webp');
     background-size: cover;
     background-position: center;
 }
@@ -1629,7 +1647,7 @@ footer {
     padding: 60px 20px;
     font-family: 'Poppins', sans-serif;
     position: relative;
-    background-image: url('background1.png');
+    background-image: url('../images/background1.png');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -1881,7 +1899,7 @@ footer {
 
     font-family: 'Poppins', sans-serif;
 
-    background-image: url('backgroundsession.webp');
+    background-image: url('../images/backgroundsession.webp');
 
     background-size: cover;
 
@@ -2078,7 +2096,7 @@ footer {
 
     font-family: 'Poppins', sans-serif;
 
-    background-image: url('backgroundsession.webp');
+    background-image: url('../images/backgroundsession.webp');
 
     background-size: cover;
 
@@ -2266,23 +2284,7 @@ footer {
 /* LEARN MORE PAGE*/
 
 
-.learn-more-btn {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #ffffff;          /* white button */
-    color: #4f8a5b;               /* green text */
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 600;
-    border: 2px solid #4f8a5b;    /* green outline */
-    transition: 0.3s ease;
-}
 
-.learn-more-btn:hover {
-    background: #4f8a5b;         /* invert on hover */
-    color: #ffffff;
-    transform: translateY(-3px);
-}
 /* PAGE */
 .learnmore-page {
     min-height: 100vh;
