@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaseMind</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="index.html" class="logo">
+        <img src="EASE.png" alt="Logo">
+    </a>
+
+    <nav>
+        <a href="#about">About us</a>
+        <a href="services.html">Services</a>
+        <a href="support.html">Support</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="legal.html">Legal</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+
+    <!-- SLIDE 1 -->
+    <div class="hero-slide active" style="background-image: url('background12.jpg');">
+        <div class="hero-text">
+            <h1 class="easemind">EASEMIND</h1>
+            <p class="description">
+                A digital platform dedicated to promoting mental wellness through accessible and reliable online support.
+            </p>
+            <button>Inquire</button>
+        </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="hero-slide" style="background-image: url('background21.png');">
+        <div class="hero-text">
+            <p class="small-text">Your wellness matters</p>
+            <h1 class="easemind">SAFE SPACE</h1>
+            <p class="description">
+                Find guidance, emotional support, and trusted resources anytime you need them.
+            </p>
+             <a href="learnmore.html" class="learn-more-btn">
+        Learn More
+    </a>
+        </div>
+    </div>
+
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+</section>
+
+<!-- ABOUT SECTION (FIXED OUTSIDE HERO) -->
+<section class="about" id="about">
+
+    <img src="OURSTORY.png" alt="Our Story">
+
+    <div class="about-content">
+        <p>
+            Our story began with a simple yet powerful realization: many people struggle with their mental health in silence, not because help does not exist, but because it often feels out of reach.
+        </p>
+
+        <p>
+            EaseMind was founded with the vision of creating a safe and accessible space for mental wellness in the digital age. The idea was led and brought to life by our CEO, Carlo, who believed that mental health support should be easy to access, understandable, and available to everyone.
+        </p>
+
+        <p>
+           Inspired by the growing need for emotional support in a fast-paced world, CEO Carlo set out to build a platform that bridges the gap between individuals and the help they need. What started as a simple concept gradually developed into a digital space focused on care, learning, and connection.
+        </p>
+
+        <p>
+            Today, EaseMind continues to grow under the leadership of CEO Carlo, staying true to its mission of reminding people that they are not alone, and that mental wellness should always be within reach.
+        </p>
+    </div>
+
+    <!-- THERAPISTS -->
+    <div class="therapist-section">
+        <h3>OUR THERAPISTS</h3>
+
+        <div class="team-container">
+
+            <div class="team-box">
+                <img src="therapist1.webp" alt="">
+                <h4>Dr. Angela Cruz</h4>
+                <p>Anxiety Specialist</p>
+            </div>
+
+            <div class="team-box">
+                <img src="therapist2.jpg" alt="">
+                <h4>Dr. Michael Reyes</h4>
+                <p>Family Counselor</p>
+            </div>
+
+            <div class="team-box">
+                <img src="therapist3.webp" alt="">
+                <h4>Dr. Sofia Lim</h4>
+                <p>Trauma Therapist</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll(".hero-slide");
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+}
+</script>
+
+<!-- MISSION & VISION -->
+<div class="mission-vision">
+
+    <div class="mv-box">
+
+        <h3>OUR MISSION</h3>
+
+        <p>
+            To provide accessible and reliable mental wellness support through digital solutions.
+        </p>
+
+    </div>
+
+    <div class="mv-box">
+
+        <h3>OUR VISION</h3>
+
+        <p>
+            To create a supportive online space where individuals can improve their mental health and well-being.
+        </p>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h3>EaseMind</h3>
+
+        <p>
+            Supporting mental wellness through accessible
+            digital care and guidance.
+        </p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="support.html">Support</a>
+            <a href="appointment.html">Appointment</a>
+        </div>
+
+        <p class="footer-copy">
+            © 2026 EaseMind | All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

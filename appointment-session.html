@@ -1,0 +1,189 @@
+<!-- WILL BE NAVIGATE THROUGH THE APPOINTMENT HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EaseMind | Book Session</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <a href="index.html" class="logo">
+        <img src="EASE.png" alt="Logo">
+    </a>
+
+    <nav>
+        <a href="index.html#about">About us</a>
+        <a href="services.html">Services</a>
+        <a href="support.html">Support</a>
+        <a href="appointment.html">Appointment</a>
+        <a href="legal.html">Legal</a>
+    </nav>
+
+</header>
+
+<!-- BOOK SESSION -->
+<section class="book-session">
+
+    <div class="session-container">
+
+        <img src="booksession.png" alt="Session">
+
+        <p class="session-text">
+
+            At EaseMind, we believe that seeking support is a step toward healing and self-growth.
+            Book a confidential session with one of our trusted mental wellness professionals
+            and receive guidance in a safe, understanding, and supportive environment tailored
+            to your personal needs.
+
+        </p>
+
+        <form class="session-form" onsubmit="return validateForm()">
+
+            <!-- EMAIL -->
+            <input
+                type="email"
+                placeholder="EMAIL ADDRESS (REQUIRED)"
+                required
+            >
+
+            <!-- DATE -->
+            <input
+                type="date"
+                required
+            >
+
+            <!-- MESSAGE -->
+            <textarea
+                placeholder="CONCERNS / INQUIRY"
+                required
+            ></textarea>
+
+            <!-- TERMS -->
+            <div class="terms-box">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    required
+                >
+
+                <label for="terms">
+
+                    I agree to the
+
+                    <a href="legal.html" target="_blank">
+                        Terms & Conditions
+                    </a>
+
+                    and
+
+                    <a href="legal.html" target="_blank">
+                        Privacy Policy
+                    </a>.
+
+                </label>
+
+            </div>
+
+            <!-- BUTTON -->
+            <button type="submit">
+                BOOK SESSION
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h3>EaseMind</h3>
+
+        <p>
+            Supporting mental wellness through accessible
+            digital care and guidance.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="support.html">Support</a>
+            <a href="appointment.html">Appointment</a>
+
+        </div>
+
+        <p class="footer-copy">
+            © 2026 EaseMind | All Rights Reserved
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+function validateForm() {
+
+    const email = document.querySelector('input[type="email"]');
+
+    const date = document.querySelector('input[type="date"]');
+
+    const textarea = document.querySelector('textarea');
+
+    const terms = document.getElementById('terms');
+
+    if(email.value.trim() === "") {
+
+        alert("Please enter your email address.");
+
+        return false;
+    }
+
+    if(date.value === "") {
+
+        alert("Please select a session date.");
+
+        return false;
+    }
+
+    if(textarea.value.trim() === "") {
+
+        alert("Please enter your concerns or inquiry.");
+
+        return false;
+    }
+
+    if(!terms.checked) {
+
+        alert("You must agree to the Terms & Conditions and Privacy Policy.");
+
+        return false;
+    }
+
+    alert("Your session request has been submitted successfully!");
+
+    return true;
+}
+
+</script>
+
+</body>
+</html>
