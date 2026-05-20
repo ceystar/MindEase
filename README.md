@@ -1,4 +1,4 @@
-# EASEMIND Website
+# EASEMIND Website Project
 
 ## Project Overview
 This website was developed by BSIT-MWA 2nd year Student as part of their Web System/Web Development Course. It showcases the importance of mental-health wellness, and promotes the self-care on EaseMind, a fictional Therapy.
@@ -11,7 +11,7 @@ To provide self-care materials and promote the self-care on EaseMind.
 
 ## Tools Used
 - Visual Studio Code
-- HTML, CSS, JavaScript
+- HTML, CSS, JavaScript, Bootstrap
 - Git & Github
 - GitHub Pages
 
@@ -30,6 +30,12 @@ To provide self-care materials and promote the self-care on EaseMind.
 - support.html
 
 ## Design Concept
+- **Color Scheme:** Green and white for eco-branding and to create a clean, calming, and professional appearance.
+- Typography: Sans-serif fonts for better readability, modern design, and user-friendly interface.
+- **Layout:** Consistent spacing and a mobile-friendly grid layout to ensure responsiveness across different screen sizes and devices.
+- **Navigation:** Simple and interactive navigation bar for easier access to different sections of the website.
+- **User Interface:** Minimalist and organized design to provide a smooth and comfortable user experience.
+- **Responsiveness:** Adaptive design elements to maintain proper alignment and functionality on desktop and mobile devices.
 
 ## Deployment
 - GitHub Respository: [https://github.com/ceystar/MindEase]
