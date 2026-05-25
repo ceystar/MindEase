@@ -2191,6 +2191,194 @@ footer {
 
 
 /* ========================================= */
+/* FAQ PAGE */
+/* ========================================= */
+
+.faq-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+    position: relative;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url('../images/backgroundsession.webp');
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+}
+
+/* GREEN OVERLAY */
+.faq-page::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(76, 128, 85, 0.4);
+
+    z-index: 1;
+}
+
+/* MAIN CONTAINER */
+.faq-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    background: linear-gradient(135deg, #ffffff, #f8f5e6, #d8ccb4);
+
+    backdrop-filter: blur(8px);
+
+    padding: 70px 50px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+.faq-container h2 {
+
+    font-size: 35px;
+
+    color: #4f8a5b;
+
+    margin-bottom: 15px;
+}
+
+/* DESCRIPTION */
+.faq-text {
+
+    color: #555;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+/* ACCORDION */
+.accordion-item {
+
+    border: none !important;
+
+    border-radius: 18px !important;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* QUESTION BUTTON */
+.accordion-button {
+
+    background: #6CAE75 !important;
+
+    color: white !important;
+
+    font-weight: 600;
+
+    padding: 22px;
+
+    font-size: 16px;
+
+    box-shadow: none !important;
+}
+
+/* REMOVE BLUE OUTLINE */
+.accordion-button:focus {
+
+    box-shadow: none !important;
+
+    border: none !important;
+}
+
+/* ACTIVE */
+.accordion-button:not(.collapsed) {
+
+    background: #4f8a5b !important;
+
+    color: white !important;
+}
+
+/* ANSWER */
+.accordion-body {
+
+    background: white;
+
+    color: #555;
+
+    text-align: left;
+
+    line-height: 1.8;
+
+    padding: 22px;
+}
+
+/* ICON COLOR */
+.accordion-button::after {
+
+    filter: brightness(0) invert(1);
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    .faq-container {
+
+        padding: 50px 25px;
+    }
+
+    .faq-container h2 {
+
+        font-size: 28px;
+    }
+
+    .accordion-button {
+
+        font-size: 15px;
+    }
+
+    .accordion-body {
+
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+/* ========================================= */
 /* REAL MOBILE FIX */
 /* ========================================= */
 

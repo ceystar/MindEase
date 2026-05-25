@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EaseMind | FAQ</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* ========================================= */
+        /* FAQ PAGE */
+        /* ========================================= */
+
+        .faq-page {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 60px 20px;
+
+            position: relative;
+
+            font-family: 'Poppins', sans-serif;
+
+            background-image: url('assets/images/backgroundsession.webp');
+
+            background-size: cover;
+
+            background-position: center;
+
+            overflow: hidden;
+        }
+
+        /* OVERLAY */
+
+        .faq-page::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background: rgba(76, 128, 85, 0.4);
+
+            z-index: 1;
+        }
+
+        /* CONTAINER */
+
+        .faq-container {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            max-width: 1100px;
+
+            background: linear-gradient(135deg, #ffffff, #f8f5e6, #d8ccb4);
+
+            padding: 70px 50px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        /* TITLE */
+
+        .faq-container h2 {
+
+            font-size: 38px;
+
+            color: #4f8a5b;
+
+            margin-bottom: 15px;
+
+            font-weight: 700;
+        }
+
+        /* DESCRIPTION */
+
+        .faq-text {
+
+            color: #555;
+
+            line-height: 1.8;
+
+            font-size: 15px;
+
+            max-width: 700px;
+
+            margin: 0 auto 50px;
+        }
+
+        /* ACCORDION */
+
+        .accordion-item {
+
+            border: none !important;
+
+            border-radius: 18px !important;
+
+            overflow: hidden;
+
+            margin-bottom: 20px;
+
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+        }
+
+        /* QUESTION */
+
+        .accordion-button {
+
+            background: #6CAE75 !important;
+
+            color: white !important;
+
+            font-weight: 600;
+
+            padding: 22px;
+
+            font-size: 16px;
+
+            box-shadow: none !important;
+        }
+
+        /* ACTIVE */
+
+        .accordion-button:not(.collapsed) {
+
+            background: #4f8a5b !important;
+
+            color: white !important;
+        }
+
+        /* REMOVE OUTLINE */
+
+        .accordion-button:focus {
+
+            box-shadow: none !important;
+
+            border: none !important;
+        }
+
+        /* ANSWER */
+
+        .accordion-body {
+
+            background: white;
+
+            color: #555;
+
+            text-align: left;
+
+            line-height: 1.8;
+
+            padding: 22px;
+        }
+
+        /* ICON */
+
+        .accordion-button::after {
+
+            filter: brightness(0) invert(1);
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width: 768px){
+
+            .faq-container {
+
+                padding: 50px 25px;
+            }
+
+            .faq-container h2 {
+
+                font-size: 28px;
+            }
+
+            .accordion-button {
+
+                font-size: 15px;
+            }
+
+            .accordion-body {
+
+                font-size: 14px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <a href="index.html" class="logo">
+
+        <img src="assets/images/EASE.png" alt="Logo">
+
+    </a>
+
+    <nav>
+
+        <a href="index.html#about">About us</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="support.html">Support</a>
+
+        <a href="appointment.html">Appointment</a>
+
+        <a href="legal.html">Legal</a>
+
+        <a href="faq.html">FAQ</a>
+
+    </nav>
+
+</header>
+
+<!-- FAQ PAGE -->
+
+<section class="faq-page">
+
+    <div class="faq-container">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <p class="faq-text">
+
+            Find answers to common questions about EaseMind services and support.
+
+        </p>
+
+        <div class="accordion" id="faqAccordion">
+
+            <!-- FAQ 1 -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+
+                        What is EaseMind?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        EaseMind is a mental wellness support platform that provides emotional support, wellness guidance, and therapy services for individuals.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 2 -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+
+                        How can I book an appointment?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        You can schedule an appointment through the Appointment page by filling out the required details and preferred schedule.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 3 -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3">
+
+                        Are emergency hotlines available?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Yes, EaseMind provides emergency contact information and hotline support for users needing immediate assistance.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 4 -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq4">
+
+                        Is my information confidential?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Yes, all information and appointments are securely protected and treated with confidentiality.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FAQ 5 -->
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq5">
+
+                        What services does EaseMind offer?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        EaseMind offers counseling support, therapy sessions, emotional wellness guidance, and mental health resources.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h3>EaseMind</h3>
+
+        <p>
+
+            Supporting mental wellness through accessible
+            digital care and guidance.
+
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="support.html">Support</a>
+
+            <a href="appointment.html">Appointment</a>
+
+        </div>
+
+        <p class="footer-copy">
+
+            © 2026 EaseMind | All Rights Reserved
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- BOOTSTRAP JS -->
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
